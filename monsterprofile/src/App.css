@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.title {
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-size: 70px;
+  text-shadow: 2px 2px #95dada;
+}
+
+.search{
+  border-radius: 10px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  background: yellow;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+
+}
+
+.search:focus{
+  background: white;
 }
