@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+
 .card-list {
   display: flex;
   align-content: center;
@@ -5,10 +8,24 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  font-family:'Rubik Beastly', cursive;
+  letter-spacing: 3px;
+}
+
+.name{
+    font-size: 40px;
+    padding:0px 10px;
+}
+
+.userEmail{
+    position: absolute;
+    bottom: 5px;
+    color:green;
 }
 
 .wrapper {
-  width: 250px;
+  position: relative;
+  width: 320px;
   height: 400px;
   background-color: #95dada;
   border-radius: 20px;
@@ -18,7 +35,7 @@
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
-  margin: 20px;
+  margin: 30px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -28,6 +45,7 @@
 
 .wrapper:hover {
   transform: scale(1.05);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color:purple;
+  box-shadow: rgba(185, 46, 240, 0.4) 0px 5px, rgba(179, 46, 240, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(156, 46, 240, 0.1) 0px 20px, rgba(162, 46, 240, 0.05) 0px 25px;
+  color:#800080;
+
 }

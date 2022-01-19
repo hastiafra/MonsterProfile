@@ -7,11 +7,12 @@ export const CardList = (users) => {
       {users.monsters.map((monster) => (
         <div class="wrapper">
           <img
+            key={monster.id}
             src={`https://robohash.org/${monster.id}?set=set2&size=180x180`}
             alt="monster"
           />
-          <h2 key={monster.id}>{monster.name}</h2>
-          <p>{monster.email}</p>
+          <p class="name" key={monster.id}>{monster.name}</p>
+          <p class="userEmail">{monster.email}</p>
         </div>
       ))}
     </div>
