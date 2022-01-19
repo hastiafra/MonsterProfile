@@ -2,19 +2,23 @@ import React from "react";
 import "./cardList.css";
 
 export const CardList = (users) => {
+
+
   return (
     <div className="card-list">
       {users.monsters.map((monster) => (
-        <div class="wrapper">
+        <div key={monster.id} className="wrapper">
           <img
-            key={monster.id}
+            
             src={`https://robohash.org/${monster.id}?set=set2&size=180x180`}
             alt="monster"
           />
-          <p class="name" key={monster.id}>{monster.name}</p>
-          <p class="userEmail">{monster.email}</p>
+          <p className="name" key={monster.id}>{monster.name}</p>
+          <p className="userEmail">{monster.email}</p>
         </div>
       ))}
     </div>
+
+    
   );
 };
